@@ -14,6 +14,14 @@ public class Main {
                     Select your option:""");
             Scanner scanner = new Scanner(System.in);
             int choice = scanner.nextInt();
+            switch (choice) {
+                case 1:
+                    System.out.println("Enter three numbers: ");
+                    int numberOne = scanner.nextInt();
+                    int numberTwo = scanner.nextInt();
+                    int numberThree = scanner.nextInt();
+                    System.out.println("Largest number = " + Math.max(Math.max(numberOne,numberTwo),numberThree));
+            }
         }
     }
 }
