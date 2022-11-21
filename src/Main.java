@@ -21,6 +21,13 @@ public class Main {
                     int numberTwo = scanner.nextInt();
                     int numberThree = scanner.nextInt();
                     System.out.println("Largest number = " + Math.max(Math.max(numberOne,numberTwo),numberThree));
+                case 2:
+                    System.out.println("Enter three numbers: ");
+                    numberOne = scanner.nextInt();
+                    numberTwo = scanner.nextInt();
+                    numberThree = scanner.nextInt();
+                    System.out.println("Smallest number = " + Math.min(Math.min(numberOne,numberOne),numberThree));
+
             }
         }
     }
