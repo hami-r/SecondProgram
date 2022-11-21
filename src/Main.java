@@ -27,6 +27,21 @@ public class Main {
                     numberTwo = scanner.nextInt();
                     numberThree = scanner.nextInt();
                     System.out.println("Smallest number = " + Math.min(Math.min(numberOne,numberOne),numberThree));
+                case 3:
+                    System.out.println("Enter the number: ");
+                    int number = scanner.nextInt();
+                    boolean isPrime = false;
+                    for (int i = 2; i <= number / 2; i++) {
+                        if(number % i == 0) {
+                            isPrime = true;
+                            break;
+                        }
+                    }
+                    if(isPrime) {
+                        System.out.println(number + " is not a prime number");
+                    } else {
+                        System.out.println(number + " is a prime number");
+                    }
 
             }
         }
